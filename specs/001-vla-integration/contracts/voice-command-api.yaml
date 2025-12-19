@@ -1,0 +1,127 @@
+# Voice Command API Contract for VLA System
+# Defines the interface for voice processing and intent classification
+
+openapi: 3.0.0
+info:
+  title: Voice Command Processing API
+  version: 1.0.0
+  description: API for processing voice commands in Vision-Language-Action systems
+
+paths:
+  /voice/process:
+    post:
+      summary: Process a voice command
+      description: Accepts audio data and returns classified robot intent
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                audio:
+                  type: string
+                  format: binary
+                  description: Audio file in WAV or MP3 format
+                userId:
+                  type: string
+                  description: Identifier for the user
+                  example: "user-123"
+      responses:
+        '200':
+          description: Successfully processed voice command
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/VoiceCommandResponse'
+        '400':
+          description: Invalid audio format or missing parameters
+        '500':
+          description: Internal server error during processing
+
+  /intent/plan:
+    post:
+      summary: Generate action sequence from intent
+      description: Converts a robot intent into an executable action sequence
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RobotIntent'
+      responses:
+        '200':
+          description: Successfully generated action sequence
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ActionSequence'
+        '400':
+          description: Invalid intent format
+        '500':
+          description: Internal server error during planning
+
+components:
+  schemas:
+    VoiceCommandResponse:
+      type: object
+      properties:
+        intent:
+          $ref: '#/components/schemas/RobotIntent'
+        transcription:
+          type: string
+          description: Transcribed text from audio
+        confidence:
+          type: number
+          format: float
+          minimum: 0.0
+          maximum: 1.0
+          description: Confidence score of the transcription
+        processingTime:
+          type: number
+          format: float
+          description: Time taken to process in seconds
+
+    RobotIntent:
+      type: object
+      required:
+        - type
+        - parameters
+      properties:
+        type:
+          type: string
+          enum: [navigation, manipulation, perception, query]
+          description: Type of robot intent
+        parameters:
+          type: object
+          description: Specific parameters for the intent
+          additionalProperties: true
+        confidence:
+          type: number
+          format: float
+          minimum: 0.0
+          maximum: 1.0
+          description: Confidence in intent classification
+
+    ActionSequence:
+      type: array
+      items:
+        $ref: '#/components/schemas/ActionStep'
+
+    ActionStep:
+      type: object
+      required:
+        - actionType
+        - parameters
+      properties:
+        actionType:
+          type: string
+          enum: [move_to, grasp, detect, speak, wait]
+          description: Type of action to perform
+        parameters:
+          type: object
+          description: Parameters for the action
+          additionalProperties: true
+        priority:
+          type: integer
+          description: Execution priority (lower number = higher priority)
