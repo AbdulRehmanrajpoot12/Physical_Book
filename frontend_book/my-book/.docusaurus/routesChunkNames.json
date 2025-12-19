@@ -1,0 +1,325 @@
+{
+  "/Physical_Book/blog-7ee": {
+    "__comp": "a6aa9e1f",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "7661071f"
+      },
+      {
+        "content": "f4f34a3a"
+      },
+      {
+        "content": "8717b14a"
+      },
+      {
+        "content": "925b3f96"
+      }
+    ],
+    "__props": "1de1d378"
+  },
+  "/Physical_Book/blog/archive-0b3": {
+    "__comp": "9e4087bc",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "__props": "6c35c6fc"
+  },
+  "/Physical_Book/blog/authors-f64": {
+    "__comp": "621db11d",
+    "__context": {
+      "data": {
+        "blogMetadata": "acecf23e"
+      },
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "__props": "157872e4"
+  },
+  "/Physical_Book/blog/authors/all-sebastien-lorber-articles-77b": {
+    "__comp": "33fc5bb8",
+    "__context": {
+      "data": {
+        "blogMetadata": "acecf23e"
+      },
+      "plugin": "36994c47"
+    },
+    "items": [
+      {
+        "content": "7661071f"
+      },
+      {
+        "content": "f4f34a3a"
+      },
+      {
+        "content": "925b3f96"
+      }
+    ],
+    "sidebar": "814f3328",
+    "__props": "0e483543"
+  },
+  "/Physical_Book/blog/authors/yangshun-b55": {
+    "__comp": "33fc5bb8",
+    "__context": {
+      "data": {
+        "blogMetadata": "acecf23e"
+      },
+      "plugin": "36994c47"
+    },
+    "items": [
+      {
+        "content": "7661071f"
+      },
+      {
+        "content": "8717b14a"
+      },
+      {
+        "content": "925b3f96"
+      }
+    ],
+    "sidebar": "814f3328",
+    "__props": "d53d2552"
+  },
+  "/Physical_Book/blog/first-blog-post-c72": {
+    "__comp": "ccc49370",
+    "__context": {
+      "data": {
+        "blogMetadata": "acecf23e"
+      },
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "content": "e273c56f"
+  },
+  "/Physical_Book/blog/long-blog-post-658": {
+    "__comp": "ccc49370",
+    "__context": {
+      "data": {
+        "blogMetadata": "acecf23e"
+      },
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "content": "73664a40"
+  },
+  "/Physical_Book/blog/mdx-blog-post-714": {
+    "__comp": "ccc49370",
+    "__context": {
+      "data": {
+        "blogMetadata": "acecf23e"
+      },
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "content": "59362658"
+  },
+  "/Physical_Book/blog/tags-42f": {
+    "__comp": "01a85c17",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "__props": "ad838183"
+  },
+  "/Physical_Book/blog/tags/docusaurus-bc6": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "7661071f"
+      },
+      {
+        "content": "f4f34a3a"
+      },
+      {
+        "content": "8717b14a"
+      },
+      {
+        "content": "925b3f96"
+      }
+    ],
+    "__props": "eb0b0f36"
+  },
+  "/Physical_Book/blog/tags/facebook-501": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "7661071f"
+      }
+    ],
+    "__props": "aa260195"
+  },
+  "/Physical_Book/blog/tags/hello-250": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "7661071f"
+      },
+      {
+        "content": "8717b14a"
+      }
+    ],
+    "__props": "a3358adf"
+  },
+  "/Physical_Book/blog/tags/hola-450": {
+    "__comp": "6875c492",
+    "__context": {
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "items": [
+      {
+        "content": "925b3f96"
+      }
+    ],
+    "__props": "c61c7ec8"
+  },
+  "/Physical_Book/blog/welcome-4e2": {
+    "__comp": "ccc49370",
+    "__context": {
+      "data": {
+        "blogMetadata": "acecf23e"
+      },
+      "plugin": "36994c47"
+    },
+    "sidebar": "814f3328",
+    "content": "d9f32620"
+  },
+  "/Physical_Book/markdown-page-d5e": {
+    "__comp": "1f391b9e",
+    "__context": {
+      "plugin": "a7456010"
+    },
+    "content": "393be207"
+  },
+  "/Physical_Book/docs-445": {
+    "__comp": "5e95c892",
+    "__context": {
+      "plugin": "aba21aa0"
+    }
+  },
+  "/Physical_Book/docs-2f5": {
+    "__comp": "a7bd4aaa",
+    "__props": "4b7f4d44"
+  },
+  "/Physical_Book/docs-79b": {
+    "__comp": "a94703ab"
+  },
+  "/Physical_Book/docs/-b40": {
+    "__comp": "17896441",
+    "content": "5ad232c4"
+  },
+  "/Physical_Book/docs/intro-b2b": {
+    "__comp": "17896441",
+    "content": "0e384e19"
+  },
+  "/Physical_Book/docs/module-1/python-agents-rclpy-65a": {
+    "__comp": "17896441",
+    "content": "3d091599"
+  },
+  "/Physical_Book/docs/module-1/ros2-basics-d19": {
+    "__comp": "17896441",
+    "content": "5b9bd346"
+  },
+  "/Physical_Book/docs/module-1/urdf-humanoids-c95": {
+    "__comp": "17896441",
+    "content": "aec09d9c"
+  },
+  "/Physical_Book/docs/module-2/digital-twins-physical-ai-8b4": {
+    "__comp": "17896441",
+    "content": "117ac97d"
+  },
+  "/Physical_Book/docs/module-2/gazebo-physics-simulation-8e6": {
+    "__comp": "17896441",
+    "content": "2f0d94f7"
+  },
+  "/Physical_Book/docs/module-2/unity-high-fidelity-interaction-f95": {
+    "__comp": "17896441",
+    "content": "f0303fe8"
+  },
+  "/Physical_Book/docs/module-3/-b28": {
+    "__comp": "17896441",
+    "content": "9b44c66f"
+  },
+  "/Physical_Book/docs/module-3/isaac-ros-vslam-f79": {
+    "__comp": "17896441",
+    "content": "255fe1ef"
+  },
+  "/Physical_Book/docs/module-3/nav2-humanoid-navigation-90b": {
+    "__comp": "17896441",
+    "content": "5c6141a5"
+  },
+  "/Physical_Book/docs/module-3/nvidia-isaac-sim-540": {
+    "__comp": "17896441",
+    "content": "d1539e04"
+  },
+  "/Physical_Book/docs/module-4/-645": {
+    "__comp": "17896441",
+    "content": "c7dfbc38"
+  },
+  "/Physical_Book/docs/module-4/autonomous-humanoid-bba": {
+    "__comp": "17896441",
+    "content": "c51a2e12"
+  },
+  "/Physical_Book/docs/module-4/llm-planning-b31": {
+    "__comp": "17896441",
+    "content": "9cf59f31"
+  },
+  "/Physical_Book/docs/module-4/voice-to-action-647": {
+    "__comp": "17896441",
+    "content": "c872816f"
+  },
+  "/Physical_Book/docs/tutorial-basics/congratulations-a93": {
+    "__comp": "17896441",
+    "content": "822bd8ab"
+  },
+  "/Physical_Book/docs/tutorial-basics/create-a-blog-post-2be": {
+    "__comp": "17896441",
+    "content": "533a09ca"
+  },
+  "/Physical_Book/docs/tutorial-basics/create-a-document-84b": {
+    "__comp": "17896441",
+    "content": "1e4232ab"
+  },
+  "/Physical_Book/docs/tutorial-basics/create-a-page-13e": {
+    "__comp": "17896441",
+    "content": "5c868d36"
+  },
+  "/Physical_Book/docs/tutorial-basics/deploy-your-site-5ed": {
+    "__comp": "17896441",
+    "content": "f55d3e7a"
+  },
+  "/Physical_Book/docs/tutorial-basics/markdown-features-8af": {
+    "__comp": "17896441",
+    "content": "18c41134"
+  },
+  "/Physical_Book/docs/tutorial-extras/manage-docs-versions-932": {
+    "__comp": "17896441",
+    "content": "dff1c289"
+  },
+  "/Physical_Book/docs/tutorial-extras/translate-your-site-8d4": {
+    "__comp": "17896441",
+    "content": "e44a2883"
+  },
+  "/Physical_Book/-84b": {
+    "__comp": "1df93b7f",
+    "__context": {
+      "plugin": "a7456010"
+    },
+    "config": "5e9f5e1a"
+  }
+}

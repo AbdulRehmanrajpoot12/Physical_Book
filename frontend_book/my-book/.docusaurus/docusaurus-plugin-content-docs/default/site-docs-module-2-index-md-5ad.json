@@ -1,0 +1,29 @@
+{
+  "id": "module-2/index",
+  "title": "Module 2: The Digital Twin (Gazebo & Unity)",
+  "description": "Welcome to Module 2 of the Physical AI & Humanoid Robotics series. This module focuses on digital twin simulation using Gazebo and Unity, building upon the ROS 2 fundamentals from Module 1.",
+  "source": "@site/docs/module-2/index.md",
+  "sourceDirName": "module-2",
+  "slug": "/",
+  "permalink": "/Physical_Book/docs/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-2/index.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "slug": "/",
+    "title": "Module 2: The Digital Twin (Gazebo & Unity)"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "URDF for Humanoids",
+    "permalink": "/Physical_Book/docs/module-1/urdf-humanoids"
+  },
+  "next": {
+    "title": "Digital Twins for Physical AI",
+    "permalink": "/Physical_Book/docs/module-2/digital-twins-physical-ai"
+  }
+}

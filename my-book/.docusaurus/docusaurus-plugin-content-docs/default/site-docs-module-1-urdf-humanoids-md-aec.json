@@ -1,0 +1,29 @@
+{
+  "id": "module-1/urdf-humanoids",
+  "title": "URDF for Humanoids",
+  "description": "Understanding URDF fundamentals and humanoid robot structures for Physical AI & Humanoid Robotics",
+  "source": "@site/docs/module-1/urdf-humanoids.md",
+  "sourceDirName": "module-1",
+  "slug": "/module-1/urdf-humanoids",
+  "permalink": "/docs/module-1/urdf-humanoids",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-1/urdf-humanoids.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3,
+    "title": "URDF for Humanoids",
+    "description": "Understanding URDF fundamentals and humanoid robot structures for Physical AI & Humanoid Robotics"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Python Agents & rclpy",
+    "permalink": "/docs/module-1/python-agents-rclpy"
+  },
+  "next": {
+    "title": "Module 4: Vision-Language-Action (VLA)",
+    "permalink": "/docs/module-4/"
+  }
+}
