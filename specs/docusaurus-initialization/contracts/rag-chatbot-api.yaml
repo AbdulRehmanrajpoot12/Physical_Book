@@ -1,0 +1,116 @@
+# RAG Chatbot API Contract
+
+## Overview
+This API provides a RAG (Retrieval Augmented Generation) chatbot capability that can answer questions based on the book content. The chatbot uses vector embeddings to retrieve relevant content from the book and generates responses based on that context.
+
+## Base URL
+`/api/chat`
+
+## Endpoints
+
+### POST /api/chat/query
+Submit a question to the RAG chatbot and receive an answer based on book content.
+
+#### Request
+```json
+{
+  "query": "string",
+  "context_scope": "all_content|selected_text",
+  "selected_text": "optional string",
+  "temperature": "number (0.0-1.0)",
+  "max_tokens": "integer"
+}
+```
+
+#### Response
+```json
+{
+  "answer": "string",
+  "sources": [
+    {
+      "chapter": "string",
+      "section": "string",
+      "similarity_score": "number"
+    }
+  ],
+  "confidence": "low|medium|high",
+  "timestamp": "ISO 8601 datetime"
+}
+```
+
+#### Error Responses
+- `400 Bad Request`: Invalid request parameters
+- `429 Too Many Requests`: Rate limit exceeded
+- `500 Internal Server Error`: Processing error
+
+### GET /api/chat/health
+Check the health status of the RAG service.
+
+#### Response
+```json
+{
+  "status": "ok|degraded|error",
+  "vector_db_status": "connected|disconnected",
+  "llm_status": "available|unavailable",
+  "last_updated": "ISO 8601 datetime"
+}
+```
+
+### POST /api/chat/vectorize
+(Internal endpoint) Convert book content to vector embeddings.
+
+#### Request
+```json
+{
+  "content_id": "string",
+  "content": "string",
+  "metadata": {
+    "chapter": "string",
+    "section": "string",
+    "tags": ["string"]
+  }
+}
+```
+
+#### Response
+```json
+{
+  "success": "boolean",
+  "vector_id": "string",
+  "processed_at": "ISO 8601 datetime"
+}
+```
+
+## Authentication
+All endpoints (except health check) require authentication via Bearer token in the Authorization header:
+```
+Authorization: Bearer {token}
+```
+
+## Rate Limits
+- Query endpoint: 10 requests per minute per IP
+- Vectorize endpoint: 100 requests per hour per service account
+
+## Data Formats
+- Text content: UTF-8 encoded strings
+- Dates: ISO 8601 format (YYYY-MM-DDTHH:mm:ss.sssZ)
+- Numbers: Standard JSON number format
+
+## Error Format
+All error responses follow this format:
+```json
+{
+  "error": {
+    "code": "string",
+    "message": "string",
+    "details": "optional object with additional error information"
+  }
+}
+```
+
+Common error codes:
+- `INVALID_QUERY`: Query is malformed or empty
+- `CONTENT_NOT_FOUND`: No relevant content found for the query
+- `PROCESSING_ERROR`: Issue occurred during processing
+- `RATE_LIMIT_EXCEEDED`: Too many requests
+- `UNAUTHORIZED`: Missing or invalid authentication
