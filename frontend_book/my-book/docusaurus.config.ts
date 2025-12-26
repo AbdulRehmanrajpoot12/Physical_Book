@@ -14,11 +14,11 @@ const config: Config = {
 
   // Production URL & base URL for GitHub Pages
   url: "https://AbdulRehmanrajpoot12.github.io",
-  baseUrl: "/ai-physical-book/",
+  baseUrl: "/Physical_Book/",
 
   // GitHub pages deployment config
   organizationName: "AbdulRehmanrajpoot12", // Your GitHub username
-  projectName: "ai-physical-book", // Your repo name
+  projectName: "Physical_Book", // Correct repo name
 
   onBrokenLinks: "warn",
 
@@ -34,7 +34,7 @@ const config: Config = {
         docs: {
           sidebarPath: "./sidebars.js",
           editUrl:
-            "https://github.com/AbdulRehmanrajpoot12/ai-physical-book/edit/main/",
+            "https://github.com/AbdulRehmanrajpoot12/Physical_Book/edit/main/",
         },
         blog: {
           showReadingTime: true,
@@ -43,7 +43,7 @@ const config: Config = {
             xslt: true,
           },
           editUrl:
-            "https://github.com/AbdulRehmanrajpoot12/ai-physical-book/edit/main/",
+            "https://github.com/AbdulRehmanrajpoot12/Physical_Book/edit/main/",
           onInlineTags: "warn",
           onInlineAuthors: "warn",
           onUntruncatedBlogPosts: "warn",
@@ -77,7 +77,7 @@ const config: Config = {
           label: "Module 1: ROS 2",
         },
         {
-          href: "https://github.com/AbdulRehmanrajpoot12/ai-physical-book",
+          href: "https://github.com/AbdulRehmanrajpoot12/Physical_Book",
           label: "GitHub",
           position: "right",
         },
@@ -113,7 +113,7 @@ const config: Config = {
           items: [
             {
               label: "GitHub",
-              href: "https://github.com/AbdulRehmanrajpoot12/ai-physical-book",
+              href: "https://github.com/AbdulRehmanrajpoot12/Physical_Book",
             },
           ],
         },
