@@ -2,6 +2,7 @@
   "name": "my-book",
   "version": "0.0.0",
   "private": true,
+  "homepage": "https://AbdulRehmanrajpoot12.github.io/ai-physical-book",
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
