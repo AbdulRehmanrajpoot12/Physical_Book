@@ -79,7 +79,9 @@ class VectorizeResponse(BaseModel):
 
 # Initialize clients
 qdrant_client = QdrantClient(
-    url="http://localhost:6333",  # Use URL format for HTTP API access
+    url=os.getenv("QDRANT_URL", "http://localhost:6333"),  # Use URL format for HTTP API access
+    api_key=os.getenv("QDRANT_API_KEY"),  # Optional API key for secured Qdrant instances
+    timeout=10  # Add timeout for requests
 )
 openrouter_client = httpx.AsyncClient(
     base_url="https://openrouter.ai/api/v1",
@@ -116,33 +118,26 @@ async def query_endpoint(request: QueryRequest):
         })
 
     try:
-        # Use the low-level HTTP API with synchronous requests
-        import requests
-        search_response = requests.post(
-            f"http://localhost:6333/collections/book_content/points/search",
-            json={
-                "vector": query_embedding,
-                "limit": 5,
-                "with_payload": True
-            },
-            headers={"Content-Type": "application/json"}
+        # Use the Qdrant client SDK for searching
+        search_results = qdrant_client.search(
+            collection_name="book_content",
+            query_vector=query_embedding,
+            limit=5,
+            with_payload=True
         )
-        if search_response.status_code == 200:
-            search_results = search_response.json()["result"]
-        else:
-            logger.error(f"Qdrant search failed: {search_response.status_code} - {search_response.text}")
-            raise Exception(f"Qdrant search failed: {search_response.status_code}")
+        # Convert to the expected format
+        search_results = [hit for hit in search_results]
 
         # Build context from retrieved chunks
         context_chunks = []
         sources = []
         for result in search_results:
-            if result.get("payload"):
-                context_chunks.append(result["payload"].get("content", ""))
+            if result.payload:
+                context_chunks.append(result.payload.get("content", ""))
                 sources.append(Source(
-                    chapter=result["payload"].get("chapter", "Unknown"),
-                    section=result["payload"].get("section", "Unknown"),
-                    similarity_score=result.get("score", 0.0)
+                    chapter=result.payload.get("chapter", "Unknown"),
+                    section=result.payload.get("section", "Unknown"),
+                    similarity_score=result.score
                 ))
 
         context = "\n\n".join(context_chunks)
@@ -248,33 +243,26 @@ async def simple_query_endpoint(request: QueryRequest):
         })
 
     try:
-        # Use the low-level HTTP API with synchronous requests
-        import requests
-        search_response = requests.post(
-            f"http://localhost:6333/collections/book_content/points/search",
-            json={
-                "vector": query_embedding,
-                "limit": 5,
-                "with_payload": True
-            },
-            headers={"Content-Type": "application/json"}
+        # Use the Qdrant client SDK for searching
+        search_results = qdrant_client.search(
+            collection_name="book_content",
+            query_vector=query_embedding,
+            limit=5,
+            with_payload=True
         )
-        if search_response.status_code == 200:
-            search_results = search_response.json()["result"]
-        else:
-            logger.error(f"Qdrant search failed: {search_response.status_code} - {search_response.text}")
-            raise Exception(f"Qdrant search failed: {search_response.status_code}")
+        # Convert to the expected format
+        search_results = [hit for hit in search_results]
 
         # Build context from retrieved chunks
         context_chunks = []
         sources = []
         for result in search_results:
-            if result.get("payload"):
-                context_chunks.append(result["payload"].get("content", ""))
+            if result.payload:
+                context_chunks.append(result.payload.get("content", ""))
                 sources.append(Source(
-                    chapter=result["payload"].get("chapter", "Unknown"),
-                    section=result["payload"].get("section", "Unknown"),
-                    similarity_score=result.get("score", 0.0)
+                    chapter=result.payload.get("chapter", "Unknown"),
+                    section=result.payload.get("section", "Unknown"),
+                    similarity_score=result.score
                 ))
 
         context = "\n\n".join(context_chunks)
