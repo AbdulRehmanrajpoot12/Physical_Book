@@ -1,144 +1,130 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
-import type * as Preset from '@docusaurus/preset-classic';
+import { themes as prismThemes } from "prism-react-renderer";
+import type { Config } from "@docusaurus/types";
+import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
-  title: 'Physical AI & Humanoid Robotics',
-  tagline: 'The Robotic Nervous System (ROS 2)',
-  favicon: 'img/favicon.ico',
+  title: "Physical AI & Humanoid Robotics",
+  tagline: "The Robotic Nervous System (ROS 2)",
+  favicon: "img/favicon.ico",
 
-  // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
+  // Future flags
   future: {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
 
-  // Set the production url of your site here
-  url: 'https://your-ai-physical-book-site.example.com',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  // Production URL & base URL for GitHub Pages
+  url: "https://AbdulRehmanrajpoot12.github.io",
+  baseUrl: "/ai-physical-book/",
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'your-username', // Usually your GitHub org/user name.
-  projectName: 'ai-physical-book', // Usually your repo name.
+  // GitHub pages deployment config
+  organizationName: "AbdulRehmanrajpoot12", // Your GitHub username
+  projectName: "ai-physical-book", // Your repo name
 
-  onBrokenLinks: 'warn',
+  onBrokenLinks: "warn",
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: "en",
+    locales: ["en"],
   },
 
   presets: [
     [
-      'classic',
+      "classic",
       {
         docs: {
-          sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
+          sidebarPath: "./sidebars.js",
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            "https://github.com/AbdulRehmanrajpoot12/ai-physical-book/edit/main/",
         },
         blog: {
           showReadingTime: true,
           feedOptions: {
-            type: ['rss', 'atom'],
+            type: ["rss", "atom"],
             xslt: true,
           },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
+            "https://github.com/AbdulRehmanrajpoot12/ai-physical-book/edit/main/",
+          onInlineTags: "warn",
+          onInlineAuthors: "warn",
+          onUntruncatedBlogPosts: "warn",
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: "./src/css/custom.css",
         },
       } satisfies Preset.Options,
     ],
   ],
 
   plugins: [],
-  clientModules: [
-    './src/plugins/ChatbotPlugin.js',
-  ],
-  themeConfig:
-    {
-      // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
-      colorMode: {
-        respectPrefersColorScheme: true,
+  clientModules: ["./src/plugins/ChatbotPlugin.js"],
+
+  themeConfig: {
+    image: "img/docusaurus-social-card.jpg",
+    colorMode: {
+      respectPrefersColorScheme: true,
+    },
+    navbar: {
+      title: "Physical AI & Humanoid Robotics",
+      logo: {
+        alt: "Physical AI & Humanoid Robotics Logo",
+        src: "img/logo.svg",
       },
-      navbar: {
-        title: 'Physical AI & Humanoid Robotics',
-        logo: {
-          alt: 'Physical AI & Humanoid Robotics Logo',
-          src: 'img/logo.svg',
+      items: [
+        {
+          type: "docSidebar",
+          sidebarId: "tutorialSidebar",
+          position: "left",
+          label: "Module 1: ROS 2",
         },
-        items: [
-          {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Module 1: ROS 2',
-          },
-          {
-            href: 'https://github.com/your-username/ai-physical-book',
-            label: 'GitHub',
-            position: 'right',
-          },
-        ],
-      },
-      footer: {
-        style: 'dark',
-        links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Module 1: ROS 2',
-                to: '/docs/module-1/ros2-basics',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'ROS Answers',
-                href: 'https://answers.ros.org/',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discord.gg/robotics',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'GitHub',
-                href: 'https://github.com/your-username/ai-physical-book',
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} Physical AI & Humanoid Robotics. Built with Docusaurus.`,
-      },
-      prism: {
-        theme: prismThemes.github,
-        darkTheme: prismThemes.dracula,
-      },
-    } satisfies Preset.ThemeConfig,
+        {
+          href: "https://github.com/AbdulRehmanrajpoot12/ai-physical-book",
+          label: "GitHub",
+          position: "right",
+        },
+      ],
+    },
+    footer: {
+      style: "dark",
+      links: [
+        {
+          title: "Docs",
+          items: [
+            {
+              label: "Module 1: ROS 2",
+              to: "/docs/module-1/ros2-basics",
+            },
+          ],
+        },
+        {
+          title: "Community",
+          items: [
+            {
+              label: "ROS Answers",
+              href: "https://answers.ros.org/",
+            },
+            {
+              label: "Discord",
+              href: "https://discord.gg/robotics",
+            },
+          ],
+        },
+        {
+          title: "More",
+          items: [
+            {
+              label: "GitHub",
+              href: "https://github.com/AbdulRehmanrajpoot12/ai-physical-book",
+            },
+          ],
+        },
+      ],
+      copyright: `Copyright © ${new Date().getFullYear()} Physical AI & Humanoid Robotics. Built with Docusaurus.`,
+    },
+    prism: {
+      theme: prismThemes.github,
+      darkTheme: prismThemes.dracula,
+    },
+  } satisfies Preset.ThemeConfig,
 };
 
 export default config;
