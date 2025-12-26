@@ -49,7 +49,7 @@ specs/001-ros2-physical-ai/
 
 ### Source Code (repository root)
 ```text
-my-book/
+frontend_book/my-book/
 ├── docs/
 │   └── module-1/
 │       ├── ros2-basics.md

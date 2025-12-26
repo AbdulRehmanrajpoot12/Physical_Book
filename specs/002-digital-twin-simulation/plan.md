@@ -49,7 +49,7 @@ specs/002-digital-twin-simulation/
 
 ### Source Code (repository root)
 ```text
-my-book/
+frontend_book/my-book/
 ├── docs/
 │   └── module-2/
 │       ├── digital-twins-physical-ai.md

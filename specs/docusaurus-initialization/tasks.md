@@ -19,17 +19,17 @@ description: "Task list for Docusaurus book initialization with Module 1"
 
 ## Path Conventions
 
-- **Docusaurus project**: `my-book/` at repository root
-- **Documentation**: `my-book/docs/` for book content
-- **Configuration**: `my-book/docusaurus.config.js`, `my-book/sidebars.js`
-- **Custom components**: `my-book/src/components/`
-- **Custom CSS**: `my-book/src/css/`
+- **Docusaurus project**: `frontend_book/my-book/`
+- **Documentation**: `frontend_book/my-book/docs/` for book content
+- **Configuration**: `frontend_book/my-book/docusaurus.config.js`, `frontend_book/my-book/sidebars.js`
+- **Custom components**: `frontend_book/my-book/src/components/`
+- **Custom CSS**: `frontend_book/my-book/src/css/`
 
 ## Phase 1: Setup (Shared Infrastructure)
 
 **Purpose**: Docusaurus project initialization and basic structure
 
-- [ ] T001 Initialize Docusaurus project with classic template in my-book/
+- [ ] T001 Initialize Docusaurus project with classic template in frontend_book/my-book/
 - [ ] T002 [P] Create project directory structure for docs, src, static
 - [ ] T003 [P] Install Docusaurus dependencies and verify project builds
 
@@ -41,10 +41,10 @@ description: "Task list for Docusaurus book initialization with Module 1"
 
 **⚠️ CRITICAL**: No user story work can begin until this phase is complete
 
-- [ ] T004 Configure docusaurus.config.js with book settings
-- [ ] T005 [P] Create initial sidebar navigation in sidebars.js
+- [ ] T004 Configure frontend_book/my-book/docusaurus.config.js with book settings
+- [ ] T005 [P] Create initial sidebar navigation in frontend_book/my-book/sidebars.js
 - [ ] T006 [P] Set up basic documentation structure with intro.md
-- [ ] T007 Create module-1 directory structure in my-book/docs/module-1/
+- [ ] T007 Create module-1 directory structure in frontend_book/my-book/docs/module-1/
 - [ ] T008 Verify local development server starts successfully
 
 **Checkpoint**: Foundation ready - user story implementation can now begin in parallel
@@ -59,10 +59,10 @@ description: "Task list for Docusaurus book initialization with Module 1"
 
 ### Implementation for User Story 1
 
-- [ ] T009 [P] [US1] Create ROS 2 Basics chapter file in my-book/docs/module-1/ros2-basics.md
-- [ ] T010 [P] [US1] Create Python Agents & rclpy chapter file in my-book/docs/module-1/python-agents-rclpy.md
-- [ ] T011 [P] [US1] Create URDF chapter file in my-book/docs/module-1/urdf.md
-- [ ] T012 [US1] Update sidebars.js to include Module 1 navigation with all 3 chapters
+- [ ] T009 [P] [US1] Create ROS 2 Basics chapter file in frontend_book/my-book/docs/module-1/ros2-basics.md
+- [ ] T010 [P] [US1] Create Python Agents & rclpy chapter file in frontend_book/my-book/docs/module-1/python-agents-rclpy.md
+- [ ] T011 [P] [US1] Create URDF chapter file in frontend_book/my-book/docs/module-1/urdf.md
+- [ ] T012 [US1] Update frontend_book/my-book/sidebars.js to include Module 1 navigation with all 3 chapters
 - [ ] T013 [US1] Add basic content structure to ROS 2 Basics chapter following book standards
 - [ ] T014 [US1] Add basic content structure to Python Agents & rclpy chapter following book standards
 - [ ] T015 [US1] Add basic content structure to URDF chapter following book standards
@@ -100,12 +100,12 @@ description: "Task list for Docusaurus book initialization with Module 1"
 
 ### Implementation for User Story 3
 
-- [ ] T024 [P] [US3] Create API endpoint structure for chatbot in my-book/src/pages/api/chat.js
+- [ ] T024 [P] [US3] Create API endpoint structure for chatbot in frontend_book/my-book/src/pages/api/chat.js
 - [ ] T025 [US3] Implement POST /api/chat/query endpoint based on contract
 - [ ] T026 [US3] Implement GET /api/chat/health endpoint based on contract
 - [ ] T027 [US3] Implement POST /api/chat/vectorize endpoint based on contract
 - [ ] T028 [US3] Add authentication layer to chatbot API endpoints
-- [ ] T029 [US3] Create client-side chatbot component in my-book/src/components/Chatbot.jsx
+- [ ] T029 [US3] Create client-side chatbot component in frontend_book/my-book/src/components/Chatbot.jsx
 - [ ] T030 [US3] Integrate chatbot component into book pages
 
 **Checkpoint**: All user stories should now be independently functional
@@ -120,11 +120,11 @@ description: "Task list for Docusaurus book initialization with Module 1"
 
 ### Implementation for User Story 4
 
-- [ ] T031 [US4] Add custom CSS in my-book/src/css/custom.css
-- [ ] T032 [US4] Update site title, tagline, and branding in docusaurus.config.js
+- [ ] T031 [US4] Add custom CSS in frontend_book/my-book/src/css/custom.css
+- [ ] T032 [US4] Update site title, tagline, and branding in frontend_book/my-book/docusaurus.config.js
 - [ ] T033 [US4] Add custom navigation elements and footer
 - [ ] T034 [US4] Implement responsive design for mobile viewing
-- [ ] T035 [US4] Add favicon and other static assets to my-book/static/
+- [ ] T035 [US4] Add favicon and other static assets to frontend_book/my-book/static/
 
 **Checkpoint**: All user stories should now be independently functional
 
@@ -198,9 +198,9 @@ description: "Task list for Docusaurus book initialization with Module 1"
 
 ```bash
 # Launch all chapter files creation together:
-Task: "Create ROS 2 Basics chapter file in my-book/docs/module-1/ros2-basics.md"
-Task: "Create Python Agents & rclpy chapter file in my-book/docs/module-1/python-agents-rclpy.md"
-Task: "Create URDF chapter file in my-book/docs/module-1/urdf.md"
+Task: "Create ROS 2 Basics chapter file in frontend_book/my-book/docs/module-1/ros2-basics.md"
+Task: "Create Python Agents & rclpy chapter file in frontend_book/my-book/docs/module-1/python-agents-rclpy.md"
+Task: "Create URDF chapter file in frontend_book/my-book/docs/module-1/urdf.md"
 ```
 
 ---

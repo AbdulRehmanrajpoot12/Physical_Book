@@ -26,8 +26,8 @@ description: "Task list for Digital Twin Simulation for Physical AI & Humanoid R
 
 **Purpose**: Extending Docusaurus project with Module 2 structure
 
-- [X] T001 Create docs/module-2/ directory structure in my-book/
-- [X] T002 [P] Create Module 2 chapter files in my-book/docs/module-2/
+- [X] T001 Create docs/module-2/ directory structure in frontend_book/my-book/
+- [X] T002 [P] Create Module 2 chapter files in frontend_book/my-book/docs/module-2/
 - [X] T003 [P] Create digital-twins-physical-ai.md chapter file
 - [X] T004 [P] Create gazebo-physics-simulation.md chapter file
 - [X] T005 [P] Create unity-high-fidelity-interaction.md chapter file

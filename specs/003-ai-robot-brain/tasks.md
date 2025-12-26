@@ -26,8 +26,8 @@ description: "Task list for The AI-Robot Brain (NVIDIA Isaac™) module implemen
 
 **Purpose**: Docusaurus project extension with Module 3 structure
 
-- [X] T001 Create docs/module-3/ directory structure in my-book/
-- [X] T002 [P] Create Module 3 chapter files in my-book/docs/module-3/
+- [X] T001 Create docs/module-3/ directory structure in frontend_book/my-book/
+- [X] T002 [P] Create Module 3 chapter files in frontend_book/my-book/docs/module-3/
 - [X] T003 [P] Create nvidia-isaac-sim.md chapter file
 - [X] T004 [P] Create isaac-ros-vslam.md chapter file
 - [X] T005 [P] Create nav2-humanoid-navigation.md chapter file

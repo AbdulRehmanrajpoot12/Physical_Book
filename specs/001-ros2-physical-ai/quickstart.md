@@ -11,12 +11,12 @@
 
 1. **Create a new Docusaurus project:**
    ```bash
-   npx create-docusaurus@latest my-book classic
+   npx create-docusaurus@latest frontend_book/my-book classic
    ```
 
 2. **Navigate to your project directory:**
    ```bash
-   cd my-book
+   cd frontend_book/my-book
    ```
 
 3. **Start the development server:**
@@ -26,20 +26,21 @@
 
 4. **Create the module directory:**
    ```bash
-   mkdir -p docs/module-1
+   mkdir -p frontend_book/my-book/docs/module-1
    ```
 
 ## Adding Module Content
 
 1. **Create the three required chapters:**
    ```bash
-   touch docs/module-1/ros2-basics.md
-   touch docs/module-1/python-agents-rclpy.md
-   touch docs/module-1/urdf-humanoids.md
+   touch frontend_book/my-book/docs/module-1/ros2-basics.md
+   touch frontend_book/my-book/docs/module-1/python-agents-rclpy.md
+   touch frontend_book/my-book/docs/module-1/urdf-humanoids.md
    ```
 
-2. **Add the chapters to the sidebar configuration** in `sidebars.js`:
+2. **Add the chapters to the sidebar configuration** in `frontend_book/my-book/sidebars.js`:
    ```javascript
+   // frontend_book/my-book/sidebars.js
    module.exports = {
      tutorialSidebar: [
        {
@@ -71,8 +72,8 @@
 
 ## Development Workflow
 
-1. Edit the `.md` files in the `docs/module-1/` directory
-2. Preview changes automatically with `npm start`
+1. Edit the `.md` files in the `frontend_book/my-book/docs/module-1/` directory
+2. Preview changes automatically with `npm start` (from the frontend_book/my-book directory)
 3. When ready, build with `npm run build` and deploy to GitHub Pages
 4. Commit your changes to version control
 

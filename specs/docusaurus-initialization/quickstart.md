@@ -12,8 +12,8 @@
 ### 1. Initialize Docusaurus Project
 
 ```bash
-npx create-docusaurus@latest my-book classic
-cd my-book
+npx create-docusaurus@latest frontend_book/my-book classic
+cd frontend_book/my-book
 ```
 
 ### 2. Project Structure Overview
@@ -21,7 +21,7 @@ cd my-book
 After initialization, your project will have the following structure:
 
 ```
-my-book/
+frontend_book/my-book/
 ├── blog/
 ├── docs/
 ├── src/
@@ -48,18 +48,18 @@ This command starts a local development server and opens your site in a browser 
 Create the directory for Module 1 and the three chapters:
 
 ```bash
-mkdir docs/module-1
-touch docs/module-1/ros2-basics.md
-touch docs/module-1/python-agents-rclpy.md
-touch docs/module-1/urdf.md
+mkdir frontend_book/my-book/docs/module-1
+touch frontend_book/my-book/docs/module-1/ros2-basics.md
+touch frontend_book/my-book/docs/module-1/python-agents-rclpy.md
+touch frontend_book/my-book/docs/module-1/urdf.md
 ```
 
 ### 5. Configure Sidebar Navigation
 
-Update `sidebars.js` to include the new modules and chapters:
+Update `frontend_book/my-book/sidebars.js` to include the new modules and chapters:
 
 ```javascript
-// sidebars.js
+// frontend_book/my-book/sidebars.js
 module.exports = {
   tutorialSidebar: [
     'intro',

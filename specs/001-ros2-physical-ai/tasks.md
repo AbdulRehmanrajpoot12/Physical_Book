@@ -26,7 +26,7 @@ description: "Task list for ROS 2 for Physical AI & Humanoid Robotics module imp
 
 **Purpose**: Docusaurus project initialization and basic structure
 
-- [ ] T001 Create Docusaurus project using classic template in my-book/
+- [ ] T001 Create Docusaurus project using classic template in frontend_book/my-book/
 - [ ] T002 [P] Initialize package.json with required dependencies
 - [ ] T003 [P] Configure Docusaurus settings in docusaurus.config.js
 - [ ] T004 Create docs/module-1/ directory structure

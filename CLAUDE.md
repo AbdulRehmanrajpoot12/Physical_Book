@@ -13,7 +13,7 @@ Auto-generated from all feature plans. Last updated: 2025-12-17
 ## Project Structure
 
 ```text
-my-book/
+frontend_book/my-book/
 ├── docs/
 │   ├── intro.md
 │   └── module-1/

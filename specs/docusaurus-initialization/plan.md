@@ -50,7 +50,7 @@ specs/docusaurus-initialization/
 ### Source Code (repository root)
 
 ```text
-my-book/
+frontend_book/my-book/
 ├── docs/
 │   ├── intro.md
 │   └── module-1/

@@ -12,18 +12,19 @@
 
 1. **Create the module directory:**
    ```bash
-   mkdir -p my-book/docs/module-2
+   mkdir -p frontend_book/my-book/docs/module-2
    ```
 
 2. **Create the three required chapters:**
    ```bash
-   touch my-book/docs/module-2/digital-twins-physical-ai.md
-   touch my-book/docs/module-2/gazebo-physics-simulation.md
-   touch my-book/docs/module-2/unity-high-fidelity-interaction.md
+   touch frontend_book/my-book/docs/module-2/digital-twins-physical-ai.md
+   touch frontend_book/my-book/docs/module-2/gazebo-physics-simulation.md
+   touch frontend_book/my-book/docs/module-2/unity-high-fidelity-interaction.md
    ```
 
-3. **Add the chapters to the sidebar configuration** in `sidebars.js`:
+3. **Add the chapters to the sidebar configuration** in `frontend_book/my-book/sidebars.js`:
    ```javascript
+   // frontend_book/my-book/sidebars.js
    module.exports = {
      tutorialSidebar: [
        {
@@ -50,8 +51,8 @@
 
 ## Development Workflow
 
-1. Edit the `.md` files in the `docs/module-2/` directory
-2. Preview changes automatically with `npm start` (from the my-book directory)
+1. Edit the `.md` files in the `frontend_book/my-book/docs/module-2/` directory
+2. Preview changes automatically with `npm start` (from the frontend_book/my-book directory)
 3. When ready, build with `npm run build` and deploy to GitHub Pages
 4. Commit your changes to version control
 

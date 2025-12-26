@@ -49,7 +49,7 @@ specs/001-vla-integration/
 
 ### Source Code (repository root)
 ```text
-my-book/
+frontend_book/my-book/
 ├── docs/
 │   └── module-4/
 │       ├── voice-to-action.md

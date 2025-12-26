@@ -26,8 +26,8 @@ description: "Task list for Module 4 - Vision-Language-Action (VLA) module imple
 
 **Purpose**: Docusaurus project extension with Module 4 structure
 
-- [X] T001 Create docs/module-4/ directory structure in my-book/
-- [X] T002 [P] Create Module 4 chapter files in my-book/docs/module-4/
+- [X] T001 Create docs/module-4/ directory structure in frontend_book/my-book/
+- [X] T002 [P] Create Module 4 chapter files in frontend_book/my-book/docs/module-4/
 - [X] T003 [P] Create voice-to-action.md chapter file
 - [X] T004 [P] Create llm-planning.md chapter file
 - [X] T005 [P] Create autonomous-humanoid.md chapter file

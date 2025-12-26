@@ -1,0 +1,7 @@
+main.py
+pyproject.toml
+content_ingestion.egg-info/PKG-INFO
+content_ingestion.egg-info/SOURCES.txt
+content_ingestion.egg-info/dependency_links.txt
+content_ingestion.egg-info/requires.txt
+content_ingestion.egg-info/top_level.txt

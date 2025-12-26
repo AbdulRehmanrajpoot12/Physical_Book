@@ -1,0 +1,6 @@
+fastapi==0.125.0
+uvicorn[standard]==0.36.0
+qdrant-client==1.12.1
+pydantic==2.10.3
+python-dotenv==1.0.1
+sentence-transformers==3.0.1

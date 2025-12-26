@@ -12,18 +12,19 @@
 
 1. **Create the module directory:**
    ```bash
-   mkdir -p my-book/docs/module-3
+   mkdir -p frontend_book/my-book/docs/module-3
    ```
 
 2. **Create the three required chapters:**
    ```bash
-   touch my-book/docs/module-3/nvidia-isaac-sim.md
-   touch my-book/docs/module-3/isaac-ros-vslam.md
-   touch my-book/docs/module-3/nav2-humanoid-navigation.md
+   touch frontend_book/my-book/docs/module-3/nvidia-isaac-sim.md
+   touch frontend_book/my-book/docs/module-3/isaac-ros-vslam.md
+   touch frontend_book/my-book/docs/module-3/nav2-humanoid-navigation.md
    ```
 
-3. **Add the chapters to the sidebar configuration** in `sidebars.js`:
+3. **Add the chapters to the sidebar configuration** in `frontend_book/my-book/sidebars.js`:
    ```javascript
+   // frontend_book/my-book/sidebars.js
    module.exports = {
      tutorialSidebar: [
        {
@@ -60,8 +61,8 @@
 
 ## Development Workflow
 
-1. Edit the `.md` files in the `docs/module-3/` directory
-2. Preview changes automatically with `npm start` (from the my-book directory)
+1. Edit the `.md` files in the `frontend_book/my-book/docs/module-3/` directory
+2. Preview changes automatically with `npm start` (from the frontend_book/my-book directory)
 3. When ready, build with `npm run build` and deploy to GitHub Pages
 4. Commit your changes to version control
 
