@@ -9,7 +9,7 @@ def vectorize_book():
     docs_dir = "frontend_book/my-book/docs"
 
     # Vectorize endpoint
-    vectorize_url = "http://localhost:8000/api/chat/vectorize"
+    vectorize_url = "https://rehmanrajpoot-physicalbook.hf.space/api/chat/vectorize"
 
     # Check if docs directory exists
     if not os.path.exists(docs_dir):

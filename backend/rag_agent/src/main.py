@@ -29,7 +29,12 @@ app = FastAPI(
 # Add CORS middleware with proper configuration for frontend communication
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # In production, replace with specific origins
+    allow_origins=[
+        "https://rehmanrajpoot-physicalbook.hf.space",
+        "https://rehmanrajpoot.github.io",  # GitHub Pages domain
+        "http://localhost:3000",  # Local development with Docusaurus
+        "http://localhost:8000",  # Local development with FastAPI
+    ],
     allow_credentials=True,
     allow_methods=["*"],  # Allow all methods including OPTIONS
     allow_headers=["*"],  # Allow all headers

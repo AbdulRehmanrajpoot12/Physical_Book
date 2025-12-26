@@ -26,7 +26,7 @@ const Chatbot = () => {
     setIsLoading(true);
 
     try {
-      const ragAgentUrl = 'http://localhost:8000';
+      const ragAgentUrl = 'https://rehmanrajpoot-physicalbook.hf.space';
       const response = await fetch(`${ragAgentUrl}/api/chat/query`, {
         method: 'POST',
         headers: {
